@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Famous Jews by Bar/Bat Mitzvah Parasha</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- 1-liner search/filter library (3 kB) -->
+  <script defer src="https://unpkg.com/fuse.js@6/dist/fuse.min.js"></script>
+  <!-- Hebcal library so we can do everything client-side if you ever prefer -->
+  <script defer src="https://unpkg.com/@hebcal/core@5/dist/bundle.min.js"></script>
+  <!-- our people list & logic -->
+  <script defer src="people.js"></script>
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Famous Jews by Bar/Bat Mitzvah Parasha</h1>
+    <input id="search" placeholder="Type to filter names…" />
+  </header>
+
+  <main id="content">Loading…</main>
+
+  <footer>
+    <p>
+      Parasha look-ups provided by
+      <a href="https://www.hebcal.com/home/197/shabbat-times-rest-api" target="_blank"
+         rel="noopener">Hebcal Shabbat Times API</a>.
+    </p>
+  </footer>
+</body>
+</html>
